@@ -4,6 +4,8 @@ import java.sql.SQLOutput;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
 
+
+
     static String paymentType = "google";
     public static Payment selectPayment(String paymentType){
         if(paymentType == "visa"){
@@ -24,34 +26,46 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-       // actualPayment.pay();
-
-        Iphone12 iphoneTwelve = new Iphone12();
-        iphoneTwelve.isMobilePaymentAllowed();
-        iphoneTwelve.listcards();
-        iphoneTwelve.applyCard();
-        System.out.println(iphoneTwelve.applyCard());
+        Wallet iphone12Wallet = new Iphone12();
+        iphone12Wallet.listcards();
+        // imessage nincs rajta mert Wallet a típusa
 
         System.out.println("=============================");
 
-        Iphone8 iphoneEight = new Iphone8();
-        iphoneEight.isMobilePaymentAllowed();
-        iphoneEight.listcards();
-        iphoneEight.applyCard();
+        Iphone8 iphone8 = new Iphone8();
+        iphone8.call();
+        iphone8.sendmessage();
+        iphone8.imessage();
 
-        System.out.println("=============================");
+        Xiaomi8 xiaomi8 = new Xiaomi8();
+        xiaomi8.call();
+        xiaomi8.sendmessage();
 
-        Xiaomi12 xiaomiTwelve = new Xiaomi12();
-        xiaomiTwelve.isMobilePaymentAllowed();
-        xiaomiTwelve.listcards();
-        xiaomiTwelve.applyCard();
+        Xiaomi12 xiaomi12 = new Xiaomi12();
+        xiaomi12.listcards();
+        xiaomi12.applyCard();
 
-        System.out.println("=============================");
+        /*
+        MobileInterface i = new Iphone12();
+        i.call();
+        i.senbdÍMessage();
 
-        Xiaomi8 xiaomiEight = new Xiaomi8();
-        xiaomiEight.isMobilePaymentAllowed();
-        xiaomiEight.listcards();
-        xiaomiEight.applyCard();
+        IMessage iphone = new Iphone12();
+        iphone.imessage();
+
+        IMessage iphone8 = new Iphone8();
+        iphone8.imessage();
+
+        Iphone8 iphone8 = new Iphone8();
+        */
+       // System.out.println(actualPayment);
+
+
+
+
+
+
+
+
     }
 }

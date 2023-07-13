@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface MobileInterface {
+public interface MobileInterface {
+    void call();
+
+    void sendmessage();
 }
